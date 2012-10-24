@@ -11,7 +11,7 @@ if [ ! -d ~/local ]; then
   mkdir ~/local/lib
 
   echo '' >> ~/.bash_profile
-  echo "#Added by $_" >> ~/.bash_profile
+  echo "#Added by $0" >> ~/.bash_profile
   echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bash_profile
 fi
 
