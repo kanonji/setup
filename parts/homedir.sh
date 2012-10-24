@@ -15,6 +15,12 @@ if [ ! -d ~/local ]; then
   echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bash_profile
 fi
 
+if [ ! -d ~/local ]; then
+  echo 'Create ~/dev'
+  mkdir -p ~/dev/sandbox
+  mkdir ~/dev/git
+fi
+
 echo '-------------------------'
 echo 'Setup directories...Done.'
 echo '-------------------------'
