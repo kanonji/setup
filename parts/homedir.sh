@@ -1,5 +1,8 @@
 #!/bin/sh
+echo '-------------------'
 echo 'Setup directories.'
+echo '-------------------'
+echo ''
 
 if [ ! -d ~/local ]; then
   echo 'Create ~/local'
@@ -12,4 +15,7 @@ if [ ! -d ~/local ]; then
   echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bash_profile
 fi
 
+echo '-------------------------'
 echo 'Setup directories...Done.'
+echo '-------------------------'
+echo ''

@@ -1,5 +1,9 @@
 #!/bin/sh
+echo '-------------------'
 echo 'Install vim plugins.'
+echo '-------------------'
+echo ''
+
 mkdir -p ~/.vim/tmp
 mkdir ~/.vim/indent
 mkdir ~/.vim/bundle
@@ -14,4 +18,7 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/hail2u/vim-css3-syntax.git
 git clone https://github.com/violetyk/cake.vim.git
 
+echo '---------------------------'
 echo 'Install vim plugins...Done.'
+echo '---------------------------'
+echo ''

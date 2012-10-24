@@ -1,5 +1,8 @@
 #!/bin/sh
+echo '------------------'
 echo 'Install dotfiles.'
+echo '------------------'
+echo ''
 
 git clone https://github.com/kanonji/dotfile.git ~/dotfile
 for f in \
@@ -24,4 +27,7 @@ echo 'if [[ -f "$HOME/.bashrc" ]]; then' >> ~/.bash_profile
 echo '    source $HOME/.bashrc' >> ~/.bash_profile
 echo 'fi' >> ~/.bash_profile
 
+echo '-------------------------'
 echo 'Install dotfiles...Done.'
+echo '-------------------------'
+echo ''
