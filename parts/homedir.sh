@@ -7,9 +7,9 @@ if [ ! -d ~/local ]; then
   mkdir ~/local/sbin
   mkdir ~/local/lib
 
-  echo '' >> ~/.bashrc
-  echo "#Added by $_" >> ~/.bashrc
-  echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bashrc
+  echo '' >> ~/.bash_profile
+  echo "#Added by $_" >> ~/.bash_profile
+  echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bash_profile
 fi
 
 echo 'Setup directories...Done.'
