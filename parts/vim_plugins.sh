@@ -17,6 +17,7 @@ git clone https://github.com/Shougo/neocomplcache.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/hail2u/vim-css3-syntax.git
 git clone https://github.com/violetyk/cake.vim.git
+git clone https://github.com/tomtom/tcomment_vim.git
 
 echo '---------------------------'
 echo 'Install vim plugins...Done.'
