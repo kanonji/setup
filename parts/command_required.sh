@@ -14,7 +14,7 @@ is_exists(){
   fi
 }
 
-echo 'git'
+echo 'checking git...'
 if ! is_exists 'git'; then
   echo "Setup suspended."
   exit 1
