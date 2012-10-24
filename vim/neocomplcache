@@ -1,0 +1,5 @@
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
+"let g:neocomplcache_enable_auto_select = 1 " 1番目の候補を自動選択
+inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

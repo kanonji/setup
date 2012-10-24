@@ -1,0 +1,12 @@
+" tcomment
+if !exists('g:tcomment_types')
+    let g:tcomment_types = {}
+endif
+let g:tcomment_types = {
+    \'phptag_inline' : "<?php %s ?>",
+    \'phptag_echo_inline' : "<?php echo %s ?>",
+\}
+au FileType php nmap <buffer><C-_>j :TCommentAs phptag_inline<CR>
+au FileType php vmap <buffer><C-_>j :TCommentAs phptag_inline<CR>
+au FileType php nmap <buffer><C-_>k :TCommentAs phptag_echo_inline<CR>
+au FileType php vmap <buffer><C-_>k :TCommentAs phptag_echo_inline<CR>

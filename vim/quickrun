@@ -1,0 +1,8 @@
+" quickrun
+let g:quickrun_config = {}
+let g:quickrun_config['php'] = {'outputter': 'browser'}
+
+if has('path_extra')
+    set tags+=tags;/Users/kanonji
+endif
+
