@@ -4,7 +4,7 @@ echo 'Install dotfiles.'
 echo '------------------'
 echo ''
 
-git clone https://github.com/kanonji/dotfile.git ~/dotfile
+git clone git@github.com:kanonji/dotfile.git ~/dotfile
 for f in \
     .gitconfig .gitignore .screenrc .vimrc; do
     ln -s ~/dotfile/$f ~
