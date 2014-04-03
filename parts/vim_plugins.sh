@@ -19,6 +19,7 @@ git clone https://github.com/hail2u/vim-css3-syntax.git
 git clone https://github.com/violetyk/cake.vim.git
 git clone https://github.com/tomtom/tcomment_vim.git
 git clone https://github.com/cocopon/snapbuffer.vim.git
+git clone https://github.com/mattn/emmet-vim.git
 
 echo '---------------------------'
 echo 'Install vim plugins...Done.'
