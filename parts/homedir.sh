@@ -18,7 +18,8 @@ fi
 if [ ! -d ~/local ]; then
   echo 'Create ~/dev'
   mkdir -p ~/dev/sandbox
-  mkdir ~/dev/git
+  mkdir ~/dev/rgit
+  mkdir ~/dev/cgit
 fi
 
 echo '-------------------------'
