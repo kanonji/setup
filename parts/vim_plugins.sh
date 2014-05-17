@@ -21,6 +21,9 @@ git clone https://github.com/tomtom/tcomment_vim.git
 git clone https://github.com/cocopon/snapbuffer.vim.git
 git clone https://github.com/mattn/emmet-vim.git
 git clone https://github.com/majutsushi/tagbar.git
+git clone https://github.com/othree/html5.vim.git
+git clone https://github.com/pangloss/vim-javascript.git
+git clone https://github.com/tpope/vim-surround.git
 
 echo '---------------------------'
 echo 'Install vim plugins...Done.'
