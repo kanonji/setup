@@ -6,7 +6,7 @@ echo ''
 
 git clone git@github.com:kanonji/dotfile.git ~/dotfile
 for f in \
-    .gitconfig .gitignore .screenrc .vimrc .inputrc; do
+    .gitconfig .gitignore .inputrc .screenrc .slate.js .vimrc Brewfile; do
     ln -s ~/dotfile/$f ~
 done
 
