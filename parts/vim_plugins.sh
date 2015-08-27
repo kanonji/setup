@@ -5,11 +5,11 @@ echo '-------------------'
 echo ''
 
 mkdir -p ~/.vim/tmp
-mkdir ~/.vim/indent
 mkdir ~/.vim/bundle
 mkdir ~/.vim/autoload
 git clone git://github.com/tpope/vim-pathogen.git ~/.vim/bundle/vim-pathogen
 ln -s ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/
+ln -s ~/dotfile/.vim/indent ~/.vim/indent
 
 cd ~/.vim/bundle
 git clone https://github.com/thinca/vim-quickrun.git
