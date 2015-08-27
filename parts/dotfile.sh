@@ -5,6 +5,19 @@ echo '------------------'
 echo ''
 
 git clone git@github.com:kanonji/dotfile.git ~/dotfile
+if [ $? -ne 0 ]; then
+    echo ''
+    echo 'Faild to git clone git@github.com:kanonji/dotfile.git'
+    echo ''
+    echo 'git clone https://github.com/kanonji/dotfile.git ? y/N'
+    read INPUT
+    if [ "$INPUT" != "y" ]; then
+        echo 'Stoped.'
+        exit 1
+    fi
+    git clone https://github.com/kanonji/dotfile.git ~/dotfile || { echo 'Faild to git clone https://github.com/kanonji/dotfile.git'; exit 1; }
+fi
+
 for f in \
     .gitconfig .gitignore .inputrc .screenrc .slate.js .vimrc Brewfile; do
     ln -s ~/dotfile/$f ~
