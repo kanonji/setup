@@ -9,6 +9,10 @@ source ./parts/dotfile.sh
 source ./parts/homedir.sh
 source ./parts/vim_plugins.sh
 
+if this_os_is mac; then
+    source ./settings/mac.sh
+fi
+
 echo '==============='
 echo 'Setup...Done.'
 echo '==============='
