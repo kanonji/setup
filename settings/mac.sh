@@ -10,3 +10,5 @@ defaults write com.apple.dashboard mcx-disabled -boolean true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Set LoginHook for root
 sudo defaults write com.apple.loginwindow LoginHook ~/dotfile/login-hook-root.sh
+# Set LoginHook for normal user
+defaults write com.apple.loginwindow LoginHook ~/dotfile/login-hook.sh
