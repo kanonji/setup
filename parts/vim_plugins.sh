@@ -24,6 +24,7 @@ git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/othree/html5.vim.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/tpope/vim-surround.git
+git clone https://github.com/editorconfig/editorconfig-vim.git
 
 curl -o ~/.vim/bundle/Align.vba.gz -L http://www.vim.org/scripts/download_script.php?src_id=10110
 mkdir ~/.vim/bundle/Align
