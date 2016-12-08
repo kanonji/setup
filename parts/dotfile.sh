@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
     echo ''
     echo 'Faild to git clone git@github.com:kanonji/dotfile.git'
     echo ''
-    echo 'git clone https://github.com/kanonji/dotfile.git ? y/N'
+    echo 'git clone https://github.com/kanonji/dotfile.git instead? y/N'
     read INPUT
     if [ "$INPUT" != "y" ]; then
         echo 'Stoped.'
@@ -34,11 +34,20 @@ else
 fi
 
 
-echo '' >> ~/.bash_profile
-echo "#Added by $0" >> ~/.bash_profile
-echo 'if [[ -f "$HOME/.bashrc" ]]; then' >> ~/.bash_profile
-echo '    source $HOME/.bashrc' >> ~/.bash_profile
-echo 'fi' >> ~/.bash_profile
+if [[ -f ~/.bash_profile ]]; then
+    echo '' >> ~/.bash_profile
+    echo "#Added by $0" >> ~/.bash_profile
+    echo 'if [[ -f "$HOME/.bashrc" ]]; then' >> ~/.bash_profile
+    echo '    source $HOME/.bashrc' >> ~/.bash_profile
+    echo 'fi' >> ~/.bash_profile
+else
+    ln -s ~/dotfile/.bash_profile ~
+fi
+
+echo ''
+echo 'source ~/.bashrc'
+echo ''
+source ~/.bashrc
 
 echo '-------------------------'
 echo 'Install dotfiles...Done.'
