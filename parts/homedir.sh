@@ -8,14 +8,12 @@ if [ ! -d ~/local ]; then
   echo 'Create ~/local'
   mkdir -p ~/local/bin
   mkdir ~/local/sbin
-  mkdir ~/local/lib
-
-  echo '' >> ~/.bash_profile
-  echo "#Added by $0" >> ~/.bash_profile
-  echo 'export PATH=~/local/bin:~/local/sbin:$PATH' >> ~/.bash_profile
+  mkdir ~/local/src
+  mkdir ~/local/installed
+  mkdir ~/local/lib #deprecated
 fi
 
-if [ ! -d ~/local ]; then
+if [ ! -d ~/dev ]; then
   echo 'Create ~/dev'
   mkdir -p ~/dev/sandbox
   mkdir ~/dev/rgit
