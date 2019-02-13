@@ -6,7 +6,6 @@ echo ''
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-echo '---------------------------'
+echo ''
 echo 'Install tmux plugins...Done.'
-echo '---------------------------'
 echo ''

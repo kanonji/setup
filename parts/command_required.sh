@@ -20,8 +20,7 @@ if ! is_exists 'git'; then
   exit 1
 fi
 
-echo '---------------------------------------'
+echo ''
 echo 'Checking for commands required...Done.'
-echo '---------------------------------------'
 echo ''
 # Do not exit here to continue script that included this file.

@@ -44,12 +44,9 @@ else
     ln -s ~/dotfile/.bash_profile ~
 fi
 
-echo ''
-echo 'source ~/.bashrc'
-echo ''
-source ~/.bashrc
+echo 'source ~/dotfile/.bashrc'
+source ~/dotfile/.bashrc
 
-echo '-------------------------'
+echo ''
 echo 'Install dotfiles...Done.'
-echo '-------------------------'
 echo ''

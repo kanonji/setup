@@ -20,7 +20,6 @@ if [ ! -d ~/dev ]; then
   mkdir ~/dev/cgit
 fi
 
-echo '-------------------------'
+echo ''
 echo 'Setup directories...Done.'
-echo '-------------------------'
 echo ''
