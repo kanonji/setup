@@ -33,17 +33,6 @@ else
     ln -s ~/dotfile/.bashrc ~
 fi
 
-
-if [[ -f ~/.bash_profile ]]; then
-    echo '' >> ~/.bash_profile
-    echo "#Added by $0" >> ~/.bash_profile
-    echo 'if [[ -f "$HOME/.bashrc" ]]; then' >> ~/.bash_profile
-    echo '    source $HOME/.bashrc' >> ~/.bash_profile
-    echo 'fi' >> ~/.bash_profile
-else
-    ln -s ~/dotfile/.bash_profile ~
-fi
-
 echo 'source ~/dotfile/.bashrc'
 source ~/dotfile/.bashrc
 
