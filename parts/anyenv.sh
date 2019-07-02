@@ -14,7 +14,7 @@ echo 'source ~/dotfile/.bashrc'
 source ~/dotfile/.bashrc
 
 anyenv install phpenv
-git clone https://github.com/ngyuki/phpenv-composer.git $(anyenv root)/envs/phpenv/plugins
+git clone https://github.com/ngyuki/phpenv-composer.git $(phpenv root)/plugins/phpenv-composer
 anyenv install nodenv
 git clone https://github.com/pine/nodenv-yarn-install.git $(nodenv root)/plugins/nodenv-yarn-install
 anyenv install rbenv
