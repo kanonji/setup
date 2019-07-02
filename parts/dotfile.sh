@@ -19,7 +19,7 @@ if [ $? -ne 0 ]; then
 fi
 
 for f in \
-    .gitconfig .gitignore .inputrc .screenrc .slate.js .vimrc Brewfile .tmux.conf; do
+    .gitconfig .gitignore .inputrc .screenrc .slate.js .vimrc .tmux.conf; do
     ln -s ~/dotfile/$f ~
 done
 
