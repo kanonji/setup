@@ -20,6 +20,7 @@ git clone https://github.com/pine/nodenv-yarn-install.git $(anyenv root)/envs/no
 anyenv install rbenv
 anyenv install pyenv
 anyenv install goenv
+anyenv install tfenv
 
 echo 'source ~/dotfile/.bashrc'
 source ~/dotfile/.bashrc
