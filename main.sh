@@ -7,8 +7,8 @@ echo ''
 source ./parts/command_required.sh
 source ./parts/dotfile.sh
 source ./parts/homedir.sh
-source ./parts/vim_plugins.sh
-source ./parts/tmux_plugins.sh
+#source ./parts/vim_plugins.sh # this is too old.
+#source ./parts/tmux_plugins.sh # this is too old.
 source ./parts/anyenv.sh
 
 if this_os_is mac; then
